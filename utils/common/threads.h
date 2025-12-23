@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: 
 //
@@ -19,7 +19,7 @@
 // Arrays that are indexed by thread should always be MAX_TOOL_THREADS+1
 // large so THREADINDEX_MAIN can be used from the main thread.
 #define MAX_TOOL_THREADS	4
-#define THREADINDEX_MAIN	4
+#define THREADINDEX_MAIN	(MAX_TOOL_THREADS)
 
 
 extern	int		numthreads;

@@ -1,4 +1,4 @@
-//========= Copyright © 1996-2005, Valve Corporation, All rights reserved. ============//
+//========= Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ============//
 //
 // Purpose: 
 //
@@ -136,8 +136,10 @@ void ThreadSetDefault (void)
 	{
 		GetSystemInfo (&info);
 		numthreads = info.dwNumberOfProcessors;
+		/*
 		if (numthreads < 1 || numthreads > 32)
 			numthreads = 1;
+		*/
 	}
 
 	Msg ("%i threads\n", numthreads);
@@ -179,8 +181,10 @@ void RunThreads_Start( RunThreadsFn fn, void *pUserData )
 	Assert( numthreads > 0 );
 	threaded = true;
 
+	/*
 	if ( numthreads > MAX_TOOL_THREADS )
 		numthreads = MAX_TOOL_THREADS;
+	*/
 
 	for ( int i=0; i < numthreads ;i++ )
 	{
