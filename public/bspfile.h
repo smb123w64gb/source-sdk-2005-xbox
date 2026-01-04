@@ -20,8 +20,8 @@
 		// little-endian "VBSP"
 
 // MINBSPVERSION is the minimum acceptable version.  The engine will load MINBSPVERSION through BSPVERSION
-#define MINBSPVERSION 19
-#define BSPVERSION 20
+#define MINBSPVERSION 18
+#define BSPVERSION 19
 
 
 // This needs to match the value in gl_lightmap.h
@@ -322,7 +322,7 @@ enum
 	LUMP_OCCLUSION_VERSION         = 2,
 	LUMP_LIGHTMAPPAGES_VERSION     = 1,
 	LUMP_LIGHTMAPPAGEINFOS_VERSION = 1,
-	LUMP_LEAFS_VERSION			   = 1,
+	LUMP_LEAFS_VERSION			   = 0,
 };
 
 

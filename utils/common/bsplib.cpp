@@ -1281,14 +1281,14 @@ void	WriteBSPFile (char *filename, char* xzpLumpFilename )
 	memset (header, 0, sizeof(dheader_t));
 
 	header->ident = LittleLong (IDBSPHEADER);
-	header->version = LittleLong (19);
+	header->version = LittleLong (BSPVERSION);
 	header->mapRevision = LittleLong( g_MapRevision );
 
 	wadfile = SafeOpenWrite (filename);
 	SafeWrite (wadfile, header, sizeof(dheader_t));	// overwritten later
 
 	AddLump (LUMP_PLANES, dplanes, numplanes*sizeof(dplane_t));
-	AddLump (LUMP_LEAFS, dleafs, numleafs*sizeof(dleaf_version_0_t), 0);
+	AddLump (LUMP_LEAFS, dleafs, numleafs*sizeof(dleaf_version_0_t), LUMP_LEAFS_VERSION);
 	// Make ambient lighting of zero so that the rest of the code can assume that this lump is here.
 	if ( !g_bHDR && g_LeafAmbientLightingLDR.Count() == 0 )
 	{

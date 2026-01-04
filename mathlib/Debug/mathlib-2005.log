@@ -1,5 +1,0 @@
-﻿cl : command line  warning D9035: option 'Gm' has been deprecated and will be removed in a future release
-  mathlib_base.cpp
-K:\HL1RE\source-sdk-2005-xbox\mathlib\mathlib_base.cpp(100,1): warning C4838: conversion from 'unsigned int' to 'const int32' requires a narrowing conversion
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1556,5): warning MSB8012: TargetPath(K:\HL1RE\source-sdk-2005-xbox\mathlib\Debug\mathlib.lib) does not match the Library's OutputFile property value (K:\HL1RE\source-sdk-2005-xbox\lib\public\mathlib.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
-  mathlib-2005.vcxproj -> K:\HL1RE\source-sdk-2005-xbox\mathlib\Debug\mathlib.lib
